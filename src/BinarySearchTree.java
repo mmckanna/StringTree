@@ -55,7 +55,7 @@ public class BinarySearchTree {
 	public void display(Node root) {
 		if (root != null) {
 			display(root.left);
-			System.out.print(" " + root.data);
+			System.out.print(" " + root.data + "\n");
 			display(root.right);
 		}
 	}
@@ -75,17 +75,15 @@ public class BinarySearchTree {
 		// create a Binary Search Tree and populate with temp values to make sure it's
 		// working.
 		BinarySearchTree binaryTree = new BinarySearchTree();
-		binaryTree.insert("a");
-		binaryTree.insert("b");
-		binaryTree.insert("d");
-		binaryTree.insert("c");
-		binaryTree.insert("e");
+		for (int i = 0; i < fruitAndVeggies.size(); i++) {
+			binaryTree.insert(fruitAndVeggies.get(i));
+		}
+		
 		binaryTree.display(root);
 
 		System.out.println("");
 
 		bufferedReader.close();
-		System.out.println("Array contains: " + fruitAndVeggies);
 	}
 }
 
