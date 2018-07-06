@@ -72,13 +72,12 @@ public class BinarySearchTree {
 			fruitAndVeggies.add(lineText);
 		}
 
-		// create a Binary Search Tree and populate with temp values to make sure it's
-		// working.
+		// create a Binary Search Tree and populate
 		BinarySearchTree binaryTree = new BinarySearchTree();
 		for (int i = 0; i < fruitAndVeggies.size(); i++) {
 			binaryTree.insert(fruitAndVeggies.get(i));
 		}
-		
+
 		binaryTree.display(root);
 
 		System.out.println("");
